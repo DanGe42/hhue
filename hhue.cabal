@@ -1,0 +1,16 @@
+name:          hhue
+version:       0.0.0
+cabal-version: >= 1.8
+build-type:    Simple
+
+library
+    exposed-modules: Hue
+
+    extensions: OverloadedStrings
+
+    build-depends: base           >= 4 && < 5
+                 , aeson
+                 , http-conduit   >= 1.9 && < 1.10
+                 , conduit        >= 1.0
+                 , transformers   >= 0.3
+                 , http-types
